@@ -1,0 +1,54 @@
+From: Andreas Koenig
+To: Sawyer X
+Cc: Andreas Koenig, Steve Hay
+Subject: Re: Help smoke security releases?
+Date: Sun, 11 Nov 2018 14:30:02 +0100
+
+Before everything else: I find it quite embarrassing that such an email
+arrives at me as a private email with only one CC. Can I publish your
+email and my answer? I'm not feeling well when testing becomes a topic
+that is based on deals behind closed doors.
+
+>>>>> On Wed, 7 Nov 2018 21:31:27 +0200, Sawyer X said:
+
+  > Hi Andreas,
+  > I hope this email finds you well.
+
+Yes thanks. I haven't heard for a long time from you. Are you still at
+Booking in Amsterdam?
+
+  > In the past, we made a mistake of not reaching out to you to privately
+  > smoke releases. We have a pending security release we could use your
+  > help to smoke.
+
+  > Based on feedback from vendors, we decided we will try a different
+  > path with security maintenance releases. Instead of making the release
+  > and pushing the commits on the day of the RC (an in the process, blow
+  > the cover on the security-related changes before disclosure date), we
+  > will be privately sending the RC tarball to all vendors. (Some
+  > explicitly offered to help us test.) Once the RCs will pass, we will
+  > move forward with the stable. (This is only for maintenance releases,
+  > not new versions.)
+
+  > We would like to supplement the testing of vendors with your smoking
+  > services. Could you help us out?
+
+Sure I "can help you out". Where is the mailing list that discusses the
+proposals how to proceed, that supervises the testing, that collects and
+interpretes the results, that draws conclusions form the results and
+defines whether they are sufficient, reliable, trustworthy, good enough?
+In other words: is there a well-defined testing plan? And if not who
+develops it?
+
+Without that my willingness to "help out" is not worth much, because it
+will in no way be sufficient. My resources are way too limited, both in
+terms of equipment and in the efforts I can put into it. And the testing
+by vendors is even less sufficient. "Supplementing the testing of
+vendors" does not sound like a commendable plan to me. It should be the
+other way round.
+
+In other words, who is in charge and who is the controlling community?
+
+-- 
+andreas
+

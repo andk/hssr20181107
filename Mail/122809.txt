@@ -1,0 +1,27 @@
+From: Sawyer X
+Date: Wed, 7 Nov 2018 21:31:27 +0200
+Subject: Help smoke security releases?
+To: Andreas Koenig
+Cc: Steve Hay
+
+Hi Andreas,
+
+I hope this email finds you well.
+
+In the past, we made a mistake of not reaching out to you to privately
+smoke releases. We have a pending security release we could use your help
+to smoke.
+
+Based on feedback from vendors, we decided we will try a different path
+with security maintenance releases. Instead of making the release and
+pushing the commits on the day of the RC (an in the process, blow the cover
+on the security-related changes before disclosure date), we will be
+privately sending the RC tarball to all vendors. (Some explicitly offered
+to help us test.) Once the RCs will pass, we will move forward with the
+stable. (This is only for maintenance releases, not new versions.)
+
+We would like to supplement the testing of vendors with your smoking
+services. Could you help us out?
+
+Thanks,
+S.

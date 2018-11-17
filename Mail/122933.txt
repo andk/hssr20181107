@@ -1,0 +1,291 @@
+From: Sawyer X
+Date: Fri, 16 Nov 2018 09:38:23 +0200
+Subject: Re: Help smoke security releases?
+To: Andreas Koenig
+Cc: Andreas Koenig, Steve Hay
+
+Andreas, I really think you're approaching this from the wrong direction.
+Your tone seems to suggest a secret society that does something bad in
+secret so citizens won't know about it.
+
+This is just Steve and I reaching directly to a smoker who offered to
+smoke, and asking him to help with it.
+
+
+On Fri, Nov 16, 2018 at 7:01 AM Andreas Koenig wrote:
+
+> >>>>> On Sun, 11 Nov 2018 15:53:03 +0200, Sawyer X said:
+>
+>   > On Sun, Nov 11, 2018 at 3:30 PM Andreas Koenig wrote:
+>
+>   >     Before everything else: I find it quite embarrassing that such an
+>   >     email
+>   >     arrives at me as a private email with only one CC. Can I publish
+>   >     your
+>   >     email and my answer? I'm not feeling well when testing becomes a
+>   >     topic
+>   >     that is based on deals behind closed doors.
+>
+>
+>   > You can definitely publish my request and your answer. Hell, put it on
+>   > a blog post, for all I care. :)
+>
+> I will, as soon as I find the time. I will also do so with all followup
+> messages (censoring secret URLs if I ever get any), so please let me
+> know when you change your mind.
+>
+
+I don't understand what you gain from sharing that Steve and I asked you to
+smoke a security release, but... yeah, go ahead.
+
+I'm not sure what you refer to with "change your mind."
+
+
+>
+>   > The only thing you cannot share is the tarball that you are testing.
+>   > The whole idea is to try something different because vendors requeted
+>   > that we stop publishing RC tarballs of security releases, because it
+>   > defies the entire idea. We are asking them to wait until the
+>   > disclosure date with the fixes and at the same time, we publish our
+>   > own fixes. They called out and said "This isn't fair." So we're trying
+>   > to do it differently this time and see if it works.
+>
+>   > The fact that we are doing a security release is not a secret. The
+>   > fact we request your help to test it is also not a secret. And if you
+>   > are willing or unwilling is also not a secret in any way. :)
+>
+> I wonder why you are telling me all the things in private that are no
+> secret. Why did neither this nor the previous message get CCed to a
+> public forum, like p5p? Or if it was posted publicly, why you do not
+> tell me where.
+>
+
+Becaue I didn't see a need to send it to all of p5p if this is something I
+want to send to you. Just like when I want Yves to take a look at an issue,
+I don't publish it to all of p5p. I just email Yves directly. Why is this
+so weird for you?
+
+
+>
+>  >>>>>> On Wed, 7 Nov 2018 21:31:27 +0200, Sawyer X said:
+>
+>  >> Hi Andreas,
+>  >> I hope this email finds you well.
+>
+>   >     Yes thanks. I haven't heard for a long time from you. Are you
+>   >     still at
+>   >     Booking in Amsterdam?
+>
+>
+>   > Yeah. I'm dealing with stuff. :)
+>
+>   > I moved from Amsterdam to Tel Aviv, Israel. I still work for
+>   > Booking.com.
+>
+>  >> In the past, we made a mistake of not reaching out to you to
+>   >     privately
+>  >> smoke releases. We have a pending security release we could use
+>   >     your
+>  >> help to smoke.
+>
+>  >> Based on feedback from vendors, we decided we will try a
+>   >     different
+>  >> path with security maintenance releases. Instead of making the
+>   >     release
+>  >> and pushing the commits on the day of the RC (an in the process,
+>   >     blow
+>  >> the cover on the security-related changes before disclosure
+>   >     date), we
+>  >> will be privately sending the RC tarball to all vendors. (Some
+>  >> explicitly offered to help us test.) Once the RCs will pass, we
+>   >     will
+>  >> move forward with the stable. (This is only for maintenance
+>   >     releases,
+>  >> not new versions.)
+>
+>  >> We would like to supplement the testing of vendors with your
+>   >     smoking
+>  >> services. Could you help us out?
+>
+>   >     Sure I "can help you out". Where is the mailing list that
+>   >     discusses the
+>   >     proposals how to proceed, that supervises the testing, that
+>   >     collects and
+>   >     interpretes the results, that draws conclusions form the results
+>   >     and
+>   >     defines whether they are sufficient, reliable, trustworthy, good
+>   >     enough?
+>   >     In other words: is there a well-defined testing plan? And if not
+>   >     who
+>   >     develops it?
+>
+>
+>   > I'm not sure what you mean here, and I could be missing something big,
+>   > so feel free to fix my understanding and view.
+>
+> Could you possibly point out which of my questions you did not
+> understand, so that I can find out what needs to be rephrased? Otherwise
+> it is hard to figure out yet another way to rephrase it.
+>
+
+I replied in context, so the paragraph above my questions is what I refered
+to.
+
+Here I refered to "Where is the mailing list that discusses the proposals
+how to proceed, that supervises the testing, that collects and interpretes
+the results, that draws conclusions form the results and defines whether
+they are sufficient, reliable, trustworthy, good enough? In other words: is
+there a well-defined testing plan? And if not who develops it?"
+
+I thought I provided information on what we're doing here and what the plan
+is, so I'm really not sure what you are asking for. There is a security
+mailing list, and the security mailing list is aware of this attempt at
+changing the security release cycle. The plan is very clear and I've stated
+it multiple times: Release the RCs to the vendors (and hopefully a willing
+smoker - such as yourself), and when the final release is ready for the
+public, push all commits. Then proceed with maintenance releases as usual.
+
+
+
+>   > Normally, for all versions, we release RCs prior. This includes stable
+>   > versions, this includes maintenance versions, and this includes
+>   > security releases for maintenance versions. These RCs receive public
+>   > smoking, much of it yours.
+>
+>   > We would like to do the same with the release that Steve is prepping
+>   > but doing it publicly means the security fixes (which we already
+>   > reviewed the security team) will be made public. We are asking for
+>   > your help to smoke the releases. The results *can* be public. They
+>   > don't contain the public commit history or the patches, so there's no
+>   > secret about the tests (unless you uncover a security issue). We would
+>   > then make sure that Steve, Tony, Dave, Yves, Hugo, Craig, and others
+>   > in the security team will review those results so we could act on them
+>   > if they are a problem, and then produce RC2.
+>
+>   > Does that make sense?
+>
+>   >     Without that my willingness to "help out" is not worth much,
+>   >     because it
+>   >     will in no way be sufficient. My resources are way too limited,
+>   >     both in
+>   >     terms of equipment and in the efforts I can put into it. And the
+>   >     testing
+>   >     by vendors is even less sufficient. "Supplementing the testing of
+>   >     vendors" does not sound like a commendable plan to me. It should
+>   >     be the
+>   >     other way round.
+>
+
+
+What would "the other way round" look like?
+
+
+
+>
+>   > This is definitely not as widely tested as other releases. We know
+>   > this is a problem, but the alternative was publishing the security
+>   > fixes publicly before the disclosure date. What this effectively meant
+>   > is that we are breaking our own embargo. Vendors were understandably
+>   > upset about this and asked us to stop.
+>
+>   > The changes are first only merging the security bugs, leaving all
+>   > other fixes out of the way. This allows us a smaller diff to worry
+>   > about when testing. Secondly, we are inviting other vendors to help us
+>   > test. We have had a few positive responses that are now testing out
+>   > our RC1. We are hoping you could expand our pool of testing, but that
+>   > depends on your capabiilties (time, machines, etc.) and willingness.
+>
+>   > We could not figure out a way to publicly test withotu publicly
+>   > sharing the sources. If you can, I would like to hear it and work
+>   > towards it. Any suggestions are more than welcome!
+>
+>   > After we handle the security patches, we will move forward with
+>   > non-security related fixes. That will be another maintenance version
+>   > and the RCs for that will need to be more thoroughly tested, and they
+>   > will happen publicly as before.
+>
+>   > I want to stress that only the security maintenance release will get
+>   > this treatment.
+>
+>   >     In other words, who is in charge and who is the controlling
+>   >     community?
+>
+>
+>   > I don't understand what "Who is the controlling community?" means.
+>
+> I don't know who is going to test what, who was invited to test, who not
+> and why not. Who has committed to do some testing so far and how much?
+> You listed me six names who will "review the results" but not the
+> mailing list where the results are delivered and potential discussions
+> take place.
+>
+
+Previous test failures of a security release are discussed on the security
+mailing list. This case would be exactly the same. I mentioned the people
+on this list. I don't see how this is any different in this regard.
+
+Let's say we do it the opposite way. We push everything when we do an RC.
+You run a smoker and send a test failure. We still cannot (and never have,
+as far as I recall - at least I'm hoping we haven't) discussed publicly the
+fix to a bug in a security release for a security issue that is not
+publicly disclosed and is under embargo. Because, if we had, that owuld
+have been unprofessioanl and very wrong behavior. Instead, as we want to do
+now, every test failure (public or not) is discussed on the security
+discussion mailing list. I have listed people who are in the discussion
+mailing list.
+
+
+
+>
+> If the idea is not a secret, I cannot for the life of me find any reason
+> why you are telling me all this privately and nothing of it gets to a
+> public forum.
+>
+
+Because we only wanted *your* help and there was no need to publicly reach
+out to you when I can just email you directly. I really, really cannot
+fathom why this is weird for you.
+
+Let's say I wanted to ask you whether you are attending a conference,
+should I write a public post to reach out to you? Should I wrote on p5p to
+do this? Or should I email you directly? I would go with directly.
+
+The feeling I'm getting is that you are uncomfortable with me reaching to
+you directly, and prefer this to be done publicly. If that is the case, I
+would be happy to write an email to p5p with the following:
+
+Subject: Andreas, could you please help us smoke test a security release?
+Body:
+
+Hi Andreas,
+
+We have released an RC for a security release. To avoid pushing fixes for
+undisclosed issues (a mistake we have normally done in the past, which
+received strong negative feedback from vendors), we decided to publish it
+direclty to smokers and to vendors. The release will be limited to only
+security fixes which were vetted by the security team.
+
+We would like your help to test this RC. You may publicly post the test
+report (as long as it doesn't contain information on the security issue or
+its fix) or send it privately to the RT security queue, so the security
+team could review and apply necessary fixes. We will limit the scope of
+this release to security related issues only, so we could continue with our
+normal release cycle regarding other fixes.
+
+Thanks,
+Sawyer.
+
+Would that be better? Should I always approach you publicly, even with
+matters that I address only to you?
+
+I'm definitely willing to do that, I just see no point. If that's what you
+prefer, it's not a problem.
+
+
+
+
+
+>
+> --
+> andreas
+>

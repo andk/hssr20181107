@@ -1,0 +1,131 @@
+From: Sawyer X
+Date: Sun, 11 Nov 2018 15:53:03 +0200
+Subject: Re: Help smoke security releases?
+To: Andreas Koenig
+Cc: Andreas Koenig, Steve Hay
+
+On Sun, Nov 11, 2018 at 3:30 PM Andreas Koenig wrote:
+
+> Before everything else: I find it quite embarrassing that such an email
+> arrives at me as a private email with only one CC. Can I publish your
+> email and my answer? I'm not feeling well when testing becomes a topic
+> that is based on deals behind closed doors.
+>
+
+
+You can definitely publish my request and your answer. Hell, put it on a
+blog post, for all I care. :)
+
+The only thing you cannot share is the tarball that you are testing. The
+whole idea is to try something different because vendors requeted that we
+stop publishing RC tarballs of security releases, because it defies the
+entire idea. We are asking them to wait until the disclosure date with the
+fixes and at the same time, we publish our own fixes. They called out and
+said "This isn't fair." So we're trying to do it differently this time and
+see if it works.
+
+The fact that we are doing a security release is not a secret. The fact we
+request your help to test it is also not a secret. And if you are willing
+or unwilling is also not a secret in any way. :)
+
+
+
+> >>>>> On Wed, 7 Nov 2018 21:31:27 +0200, Sawyer X said:
+>
+>   > Hi Andreas,
+>   > I hope this email finds you well.
+>
+> Yes thanks. I haven't heard for a long time from you. Are you still at
+> Booking in Amsterdam?
+>
+
+Yeah. I'm dealing with stuff. :)
+
+I moved from Amsterdam to Tel Aviv, Israel. I still work for Booking.com.
+
+
+>   > In the past, we made a mistake of not reaching out to you to privately
+>   > smoke releases. We have a pending security release we could use your
+>   > help to smoke.
+>
+>   > Based on feedback from vendors, we decided we will try a different
+>   > path with security maintenance releases. Instead of making the release
+>   > and pushing the commits on the day of the RC (an in the process, blow
+>   > the cover on the security-related changes before disclosure date), we
+>   > will be privately sending the RC tarball to all vendors. (Some
+>   > explicitly offered to help us test.) Once the RCs will pass, we will
+>   > move forward with the stable. (This is only for maintenance releases,
+>   > not new versions.)
+>
+>   > We would like to supplement the testing of vendors with your smoking
+>   > services. Could you help us out?
+>
+> Sure I "can help you out". Where is the mailing list that discusses the
+> proposals how to proceed, that supervises the testing, that collects and
+> interpretes the results, that draws conclusions form the results and
+> defines whether they are sufficient, reliable, trustworthy, good enough?
+> In other words: is there a well-defined testing plan? And if not who
+> develops it?
+>
+
+I'm not sure what you mean here, and I could be missing something big, so
+feel free to fix my understanding and view.
+
+Normally, for all versions, we release RCs prior. This includes stable
+versions, this includes maintenance versions, and this includes security
+releases for maintenance versions. These RCs receive public smoking, much
+of it yours.
+
+We would like to do the same with the release that Steve is prepping but
+doing it publicly means the security fixes (which we already reviewed the
+security team) will be made public. We are asking for your help to smoke
+the releases. The results *can* be public. They don't contain the public
+commit history or the patches, so there's no secret about the tests (unless
+you uncover a security issue). We would then make sure that Steve, Tony,
+Dave, Yves, Hugo, Craig, and others in the security team will review those
+results so we could act on them if they are a problem, and then produce RC2.
+
+Does that make sense?
+
+
+>
+> Without that my willingness to "help out" is not worth much, because it
+> will in no way be sufficient. My resources are way too limited, both in
+> terms of equipment and in the efforts I can put into it. And the testing
+> by vendors is even less sufficient. "Supplementing the testing of
+> vendors" does not sound like a commendable plan to me. It should be the
+> other way round.
+>
+
+This is definitely not as widely tested as other releases. We know this is
+a problem, but the alternative was publishing the security fixes publicly
+before the disclosure date. What this effectively meant is that we are
+breaking our own embargo. Vendors were understandably upset about this and
+asked us to stop.
+
+The changes are first only merging the security bugs, leaving all other
+fixes out of the way. This allows us a smaller diff to worry about when
+testing. Secondly, we are inviting other vendors to help us test. We have
+had a few positive responses that are now testing out our RC1. We are
+hoping you could expand our pool of testing, but that depends on your
+capabiilties (time, machines, etc.) and willingness.
+
+We could not figure out a way to publicly test withotu publicly sharing the
+sources. If you can, I would like to hear it and work towards it. Any
+suggestions are more than welcome!
+
+After we handle the security patches, we will move forward with
+non-security related fixes. That will be another maintenance version and
+the RCs for that will need to be more thoroughly tested, and they will
+happen publicly as before.
+
+I want to stress that only the security maintenance release will get this
+treatment.
+
+
+
+>
+> In other words, who is in charge and who is the controlling community?
+>
+
+I don't understand what "Who is the controlling community?" means.
